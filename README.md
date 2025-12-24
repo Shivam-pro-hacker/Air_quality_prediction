@@ -1,7 +1,11 @@
 # Air_quality_prediction
+
+
 🌍 Air Quality Prediction System (India)
 A machine learning–based web application that predicts Air Quality Index (AQI) using real Indian city air-pollution data.
 Built with Python, Streamlit, and Random Forest Regression.
+
+
 📌 Project Overview
 Air pollution is a major health concern in many Indian cities. This project uses historical air-quality data to predict AQI values based on pollutant concentrations such as PM2.5, PM10, NO₂, SO₂, CO, and O₃.
 The system:
@@ -16,6 +20,8 @@ Displays AQI category (Good, Moderate, Poor, etc.)
 🧪 Interactive AQI prediction using Streamlit UI
 🔍 Feature importance visualization
 💻 Fully offline & local — no API required
+
+
 🧠 Machine Learning Details
 Input Features
 PM2.5
@@ -31,6 +37,8 @@ Random Forest Regressor
 Handles non-linearity well
 Robust to noisy environmental data
 High real-world accuracy
+
+
 📊 Model Performance
 Metric
 Value
@@ -41,6 +49,8 @@ Mean Absolute Error (MAE)
 Interpretation
 The model explains ~92% of AQI behavior
 Average prediction error is ±16 AQI, which is realistic for environmental data
+
+
 🧪 AQI Interpretation (India – CPCB)
 AQI Range
 Category
