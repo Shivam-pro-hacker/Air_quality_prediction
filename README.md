@@ -1,73 +1,91 @@
-# Air_quality_prediction
+# 🌍 Air Quality Prediction System
 
+> **An ML-powered Streamlit application that predicts Air Quality Index (AQI) from real Indian urban air-pollution data.**
 
-🌍 Air Quality Prediction System (India)
-A machine learning–based web application that predicts Air Quality Index (AQI) using real Indian city air-pollution data.
-Built with Python, Streamlit, and Random Forest Regression.
+This project builds an end-to-end machine learning pipeline that learns AQI behavior from historical pollutant measurements (PM2.5, PM10, NO₂, SO₂, CO, O₃) and provides interactive AQI prediction through a web interface.
 
+---
 
-📌 Project Overview
-Air pollution is a major health concern in many Indian cities. This project uses historical air-quality data to predict AQI values based on pollutant concentrations such as PM2.5, PM10, NO₂, SO₂, CO, and O₃.
-The system:
-Trains a machine learning model on real CPCB-based data
-Evaluates model performance using standard regression metrics
-Allows users to input pollutant values and get instant AQI prediction
-Displays AQI category (Good, Moderate, Poor, etc.)
-🚀 Features
-📊 Trained on real Indian city air-quality dataset
-🤖 Machine Learning model: Random Forest Regressor
-📈 Model evaluation using R² Score & MAE
-🧪 Interactive AQI prediction using Streamlit UI
-🔍 Feature importance visualization
-💻 Fully offline & local — no API required
+## 📌 Overview
 
+Air pollution in urban India poses serious environmental and health risks.  
+This system applies machine learning to estimate the Air Quality Index (AQI) from pollutant concentrations, enabling quick assessment of air quality conditions.
 
-🧠 Machine Learning Details
-Input Features
-PM2.5
-PM10
-NO₂
-SO₂
-CO
-O₃
-Target Variable
-AQI (Air Quality Index)
-Model Used
-Random Forest Regressor
-Handles non-linearity well
-Robust to noisy environmental data
-High real-world accuracy
+The model is trained on real CPCB-based pollution data and deployed using Streamlit for interactive prediction.
 
+---
 
-📊 Model Performance
-Metric
-Value
-R² Score
-~0.92
-Mean Absolute Error (MAE)
-~16 AQI units
-Interpretation
-The model explains ~92% of AQI behavior
-Average prediction error is ±16 AQI, which is realistic for environmental data
+## 🚀 Features
 
+- Machine Learning–based AQI prediction  
+- Random Forest regression model  
+- Interactive Streamlit web interface  
+- Real Indian pollution dataset training  
+- Model performance metrics (R², MAE)  
+- Full pollutant input prediction  
+- Pollutant full-form explanations  
+- Cross-platform (Windows & Linux)  
 
-🧪 AQI Interpretation (India – CPCB)
-AQI Range
-Category
-0 – 50     Good
-51 – 100   Satisfactory
-101 – 200  Moderate
-201 – 300  Poor
-301 – 400  Very Poor
-401 – 500  Severe
+---
 
-🧪 How Prediction Works
-User enters pollutant values (PM2.5, PM10, NO₂, SO₂, CO, O₃)
-Input is passed to the trained ML model
-Model predicts AQI value
-AQI category is displayed with health interpretation
-🧾 Dataset Information
-Source: Indian city air-quality dataset (CPCB-based)
-File used: city_day.csv
-Data includes pollutant concentrations and corresponding AQI values
-Missing values are handled using safe preprocessing
+## 🧠 Machine Learning Model
+
+**Algorithm:** Random Forest Regressor  
+
+**Input Features:**
+
+- PM2.5  
+- PM10  
+- NO₂  
+- SO₂  
+- CO  
+- O₃  
+
+**Target:** AQI  
+
+**Typical Performance:**
+
+- R² Score ≈ 0.90–0.93  
+- MAE ≈ 15–18 AQI units  
+
+The model captures nonlinear relationships between pollutants and AQI using ensemble decision trees.
+
+---
+
+## 🌫 Pollutants Used
+
+- **PM2.5** — Fine particulate matter ≤ 2.5 µm  
+- **PM10** — Coarse particulate matter ≤ 10 µm  
+- **NO₂** — Nitrogen Dioxide  
+- **SO₂** — Sulfur Dioxide  
+- **CO** — Carbon Monoxide  
+- **O₃** — Ground-level Ozone  
+
+These pollutants are primary contributors to AQI.
+
+---
+
+## 📊 AQI Categories (India CPCB)
+
+| AQI Range | Category |
+|-----------|---------|
+| 0 – 50 | Good |
+| 51 – 100 | Satisfactory |
+| 101 – 200 | Moderate |
+| 201 – 300 | Poor |
+| 301 – 400 | Very Poor |
+| 401 – 500 | Severe |
+
+---
+
+## ▶️ Installation
+
+### 🪟 Windows
+
+1. Install Python 3.9 or higher  
+   https://www.python.org/downloads/  
+   ✔ Enable **Add Python to PATH**
+
+2. Install required libraries
+```bash
+pip install -r requirements.txt
