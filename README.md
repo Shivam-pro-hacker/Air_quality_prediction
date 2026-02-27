@@ -90,6 +90,3 @@ These pollutants are primary contributors to AQI.
 2. Install required libraries
 ```bash
 pip install -r requirements.txt
-
-
-
