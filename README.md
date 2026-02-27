@@ -82,15 +82,14 @@ These pollutants are primary contributors to AQI.
 
 ### 🪟 Windows
 
-```bash
-# 1. Install Python 3.9+
-https://www.python.org/downloads/
-# Enable Add Python to PATH during install
 
-# 2. Install dependencies
+1. Install Python 3.9 or higher  
+   https://www.python.org/downloads/  
+   ✔ Enable **Add Python to PATH**
+
+2. Install required libraries
+```bash
 pip install -r requirements.txt
 
-# 3. Run the application
-python -m streamlit run app.py
 
 
